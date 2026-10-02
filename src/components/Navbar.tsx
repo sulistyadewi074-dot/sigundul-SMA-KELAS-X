@@ -98,18 +98,18 @@ export const Navbar: React.FC<Props> = ({
             </button>
           )}
 
-          {/* Sociology Bank Soal Button (Hidden during locked adventure) */}
+          {/* Sociology Materi Pelajaran Button (Hidden during locked adventure) */}
           {onOpenSociology && !isAdventureLocked && (
             <button
               onClick={() => {
                 sounds.playClick();
                 onOpenSociology();
               }}
-              title="Bank Soal & Kuis Sosiologi Kelas X SMA"
-              className="flex items-center gap-1 px-2.5 sm:px-3 py-1.5 rounded-xl text-xs font-black text-indigo-950 bg-indigo-100 hover:bg-indigo-200 border border-indigo-300 transition-colors shadow-2xs cursor-pointer"
+              title="Materi Pelajaran Sosiologi Kelas X SMA: Sejarah Perkembangan Sosiologi"
+              className="flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-xl text-xs font-black text-indigo-950 bg-indigo-100 hover:bg-indigo-200 border border-indigo-300 transition-colors shadow-2xs cursor-pointer"
             >
-              <span className="text-sm">🎓</span>
-              <span className="hidden xs:inline">Soal Sosiologi X</span>
+              <span className="text-sm">📖</span>
+              <span className="hidden xs:inline">Materi Sosiologi X</span>
             </button>
           )}
 

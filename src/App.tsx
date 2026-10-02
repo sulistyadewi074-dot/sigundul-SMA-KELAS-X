@@ -640,8 +640,8 @@ export default function App() {
                   : 'text-slate-600 hover:text-indigo-900'
               }`}
             >
-              <GraduationCap className="w-4 h-4 mb-0.5 text-indigo-600" />
-              <span>Soal X</span>
+              <BookOpen className="w-4 h-4 mb-0.5 text-indigo-600" />
+              <span>Materi X</span>
             </button>
 
             <button

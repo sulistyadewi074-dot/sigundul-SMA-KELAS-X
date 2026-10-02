@@ -20,13 +20,13 @@ export const HowToPlayModal: React.FC<Props> = ({ isOpen, onClose }) => {
     {
       step: '2',
       title: 'Rute Pos 1–4 Diacak di Setiap Perangkat',
-      desc: 'Urutan Pos 1 sampai Pos 4 diacak otomatis untuk setiap perangkat/kelompok (agar tidak saling membuntuti), sedangkan Pos 5 tetap menjadi Pos Final di akhir. Tebak lokasi tujuanmu berdasarkan deskripsi ciri-ciri tempat di layar!',
+      desc: 'Urutan Pos 1 sampai Pos 4 diacak otomatis untuk setiap kelompok. 5 Kategori Pos bertempat di: Pos 1 (Kantin), Pos 2 (Ruang Laboratorium), Pos 3 (Perpustakaan), Pos 4 (Ruang Kelas), dan Pos 5 (Guru Wali sebagai Babak Final).',
       icon: '🧭',
     },
     {
       step: '3',
-      title: 'Cari & Scan QR Code di Setiap Pos',
-      desc: 'Temukan kartu QR Code di lokasi yang sesuai dengan deskripsi, lalu pindai menggunakan kamera smartphone untuk membuka artikel materi IPAS Gangguan Pernapasan Manusia.',
+      title: 'Cari & Scan QR Code di Lokasi Pos',
+      desc: 'Tebak lokasi berdasarkan deskripsi teka-teki tempat di layar, temukan kartu QR Code di Kantin, Lab, Perpustakaan, Kelas, atau Meja Guru Wali, lalu pindai kamera smartphone untuk membuka materi dan soal!',
       icon: '📷',
     },
     {

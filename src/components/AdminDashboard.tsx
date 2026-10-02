@@ -669,6 +669,14 @@ export const AdminDashboard: React.FC<Props> = ({
               </button>
             </div>
 
+            {/* Notice on route logic: Pos 1-4 diacak, Pos 5 tempat terakhir */}
+            <div className="p-3 bg-amber-50 rounded-2xl border border-amber-200 text-xs text-amber-900 flex items-start gap-2">
+              <span className="text-base leading-none">🧭</span>
+              <p className="leading-relaxed">
+                <strong>Sistem Rute Otomatis:</strong> Urutan <strong>Pos 1 sampai Pos 4</strong> diacak otomatis di setiap perangkat kelompok siswa (mencegah saling contek dan penumpukan regu), sedangkan <strong>Pos 5 (Babak Final)</strong> ditetapkan selalu sebagai tempat terakhir.
+              </p>
+            </div>
+
             <div className="space-y-4">
               {locations.map((loc, idx) => {
                 const isEditing = editingStoryPosId === loc.id;

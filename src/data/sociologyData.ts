@@ -14,36 +14,158 @@ export interface SociologyEssayQuestion {
   };
 }
 
+export interface SociologyPosCategory {
+  posId: string;
+  code: string;
+  categoryName: string;
+  locationName: string;
+  icon: string;
+  themeColor: string;
+  subtopicTitle: string;
+  shortDesc: string;
+  locationDescription: string;
+  pedagogicalRationale: string;
+  riddleHint: string;
+  qrCode: string;
+  keyFigures: string[];
+  keyConcepts: string[];
+  questionCount: number;
+}
+
+export const SOCIOLOGY_POS_CATEGORIES: SociologyPosCategory[] = [
+  {
+    posId: 'pos_1',
+    code: 'POS 1',
+    categoryName: 'POS 1: KANTIN',
+    locationName: 'Kantin Sekolah',
+    icon: 'UtensilsCrossed',
+    themeColor: 'amber',
+    subtopicTitle: 'Badai Revolusi & Kelahiran Ilmu Masyarakat (Revolusi Prancis & Revolusi Industri)',
+    shortDesc: 'Eksplorasi sistem pembagian kerja dan transaksi ekonomi di kantin sebagai analogi lahirnya sosiologi akibat krisis Revolusi Industri di Inggris dan Revolusi Prancis 1789.',
+    locationDescription:
+      'Kantin sekolah merupakan mikrokosmos interaksi sosial dan sistem ekonomi nyata di lingkungan sekolah. Di kantin, terjadi pertukaran nilai uang dan makanan, antrean tertib para siswa, serta sistem pembagian kerja antara juru masak, pelayan, dan kasir. Suasana ini menjadi analogi sempurna untuk memahami bagaimana masyarakat pra-industri yang agraris bertransformasi secara radikal menjadi masyarakat industri modern. Ketika Revolusi Industri di Inggris melahirkan mekanisasi pabrik uap dan Revolusi Prancis meruntuhkan feodalisme monarki lama (ancien régime), tatanan kerja dan keteraturan sosial masyarakat terguncang hebat oleh urbanisasi massal, kemiskinan kota, dan eksploitasi kaum buruh. Dari guncangan inilah timbul kebutuhan mendesak akan ilmu sosiologi untuk menata kembali tatanan sosial.',
+    pedagogicalRationale:
+      'Siswa mengamati secara langsung kegiatan transaksi dan pembagian kerja di kantin sekolah untuk membedah perbedaan relasi sosial agraris versus industri, mengaitkan kenyataan sehari-hari dengan materi lahirnya sosiologi akibat krisis tatanan sosial pasca-Revolusi Prancis dan Revolusi Industri.',
+    riddleHint:
+      '🍜 Datanglah ke area KANTIN SEKOLAH! Di tempat berkumpul dan bertransaksi ini, temukan kartu QR Code untuk menyelidiki bagaimana guncangan Revolusi Industri dan Revolusi Prancis mengubah sistem kerja, ekonomi, dan tatanan masyarakat dunia!',
+    qrCode: 'SOSIOLOGI-POS-1',
+    keyFigures: ['James Watt', 'Raja Louis XVI', 'Para Filosof Pencerahan (Aufklärung)'],
+    keyConcepts: ['Revolusi Prancis (1789)', 'Revolusi Industri di Inggris', 'Urbanisasi', 'Eksploitasi Buruh & Slum Area', 'Abad Pencerahan (Aufklärung)', 'Ketertiban Sosial (Social Order)'],
+    questionCount: 5,
+  },
+  {
+    posId: 'pos_2',
+    code: 'POS 2',
+    categoryName: 'POS 2: RUANG LABORATORIUM',
+    locationName: 'Ruang Laboratorium',
+    icon: 'FlaskConical',
+    themeColor: 'sky',
+    subtopicTitle: 'Auguste Comte & Lahirnya Positivisme (Fisika Sosial & Hukum Tiga Tahap)',
+    shortDesc: 'Penerapan metode ilmiah laboratorium ke dalam penelitian gejala masyarakat oleh Auguste Comte (Bapak Sosiologi Dunia).',
+    locationDescription:
+      'Ruang laboratorium adalah episentrum pembuktian fakta objektif, di mana setiap kesimpulan harus didasarkan pada observasi empiris, pengukuran akurat, dan eksperimen ilmiah, bukan mitos atau takhayul. Suasana laboratorium ini selaras dengan gagasan utama Auguste Comte (1798–1857), Bapak Sosiologi Dunia. Comte terinspirasi oleh metode presisi ilmu alam (fisika, kimia, biologi) dan mencetuskan bahwa masyarakat manusia pun harus diteliti secara objektif melalui metode ilmiah yang ia sebut Positivisme. Sebelum menetapkan nama "Sosiologi" pada tahun 1838 dalam buku Cours de Philosophie Positive, Comte bahkan menamainya "Fisika Sosial" (Physique Sociale). Di laboratorium ini pula siswa mempelajari Hukum Tiga Tahap Pemikiran Manusia: Teologis (kekuatan gaib), Metafisik (prinsip abstrak spekulatif), dan Positif (hukum kausalitas fakta empiris).',
+    pedagogicalRationale:
+      'Siswa berada di tengah atmosfer penelitian ilmiah laboratorium untuk memahami peralihan pola pikir manusia dari cara pandang magis-teologis menuju cara pandang positif-ilmiah, serta memahami mengapa Comte memposisikan sosiologi sebagai ratu ilmu pengetahuan (queen of sciences).',
+    riddleHint:
+      '🔬 Kunjungi RUANG LABORATORIUM! Di tempat eksperimen dan pembuktian fakta empiris ini, temukan kartu QR untuk mempelajari pemikiran Auguste Comte: mengapa sosiologi lahir sebagai ilmu positif seperti ilmu alam dan Hukum Tiga Tahap Pemikiran Manusia!',
+    qrCode: 'SOSIOLOGI-POS-2',
+    keyFigures: ['Auguste Comte (Bapak Sosiologi)', 'Adolphe Quetelet'],
+    keyConcepts: ['Positivisme', 'Fisika Sosial (Physique Sociale)', 'Cours de Philosophie Positive (1838)', 'Etimologi Socius & Logos', 'Hukum Tiga Tahap (Teologis, Metafisik, Positif)', 'Statika & Dinamika Sosial'],
+    questionCount: 5,
+  },
+  {
+    posId: 'pos_3',
+    code: 'POS 3',
+    categoryName: 'POS 3: PERPUSTAKAAN',
+    locationName: 'Perpustakaan Sekolah',
+    icon: 'BookOpen',
+    themeColor: 'emerald',
+    subtopicTitle: 'Empat Pilar Tokoh Klasik Sosiologi (Durkheim, Marx, Weber, Spencer)',
+    shortDesc: 'Menjelajahi khazanah literatur teori klasik di antara rak buku perpustakaan untuk membedah paradigma empat pemikir sosiologi dunia.',
+    locationDescription:
+      'Perpustakaan adalah kawah candradimuka ilmu pengetahuan yang menyimpan ribuan buku induk, jurnal penelitian, dan mahakarya para sarjana besar dunia. Lokasi perpustakaan sekolah menjadi tempat yang paling tepat untuk menelusuri literatur pemikiran empat pilar tokoh klasik sosiologi dunia yang mematangkan disiplin ini menjadi ilmu akademis di universitas: Émile Durkheim (Fakta Sosial, Solidaritas Mekanik vs Organik, studi Bunuh Diri), Karl Marx (Materialisme Historis, Konflik Kelas Borjuis vs Proletar, Alienasi), Max Weber (Metode Verstehen, 4 Tipe Tindakan Sosial, Etika Protestan & Kapitalisme), serta Herbert Spencer (Teori Evolusi Sosial, Analogi Organik, Survival of the Fittest).',
+    pedagogicalRationale:
+      'Suasana hening dan kaya literatur di perpustakaan mendorong siswa berpikir kritis, membaca mendalam, dan membandingkan secara komparatif sudut pandang (paradigma fakta sosial, definisi sosial, dan perilaku sosial) dari empat tokoh sentral pendiri sosiologi.',
+    riddleHint:
+      '📚 Masuki area PERPUSTAKAAN SEKOLAH! Temukan kartu QR Code di antara rak buku ilmu sosial untuk menelusuri pemikiran 4 pilar tokoh klasik: Émile Durkheim, Karl Marx, Max Weber, dan Herbert Spencer!',
+    qrCode: 'SOSIOLOGI-POS-3',
+    keyFigures: ['Émile Durkheim', 'Karl Marx', 'Max Weber', 'Herbert Spencer'],
+    keyConcepts: ['Fakta Sosial (Social Facts)', 'Solidaritas Mekanik vs Organik', 'Konflik Kelas Borjuis vs Proletar', 'Alienasi Kaum Buruh', 'Metode Verstehen (Interpretasi Makna)', '4 Tipe Tindakan Sosial', 'Analogi Organik & Evolusi Sosial'],
+    questionCount: 5,
+  },
+  {
+    posId: 'pos_4',
+    code: 'POS 4',
+    categoryName: 'POS 4: RUANG KELAS',
+    locationName: 'Ruang Kelas',
+    icon: 'School',
+    themeColor: 'purple',
+    subtopicTitle: 'Ciri-Ciri & Hakikat Sosiologi sebagai Ilmu Pengetahuan',
+    shortDesc: 'Menjadikan ruang kelas sehari-hari sebagai laboratorium sosial nyata untuk membuktikan 4 karakteristik utama sosiologi: Empiris, Teoretis, Kumulatif, dan Non-Etis.',
+    locationDescription:
+      'Ruang kelas bukan sekadar ruangan berpintu dan berjendela, melainkan sebuah laboratorium interaksi sosial mini paling hidup. Di ruang kelas terdapat norma tata tertib tertulis, struktur sosial (wali kelas, ketua kelas, seksi piket), interaksi pertemanan antarkelompok, hingga potensi friksi antarsiswa. Di lokasi inilah para siswa dapat membuktikan secara langsung empat karakteristik utama sosiologi sebagai ilmu pengetahuan: (1) EMPIRIS, pengamatan didasarkan pada fakta lapangan nyata di kelas, bukan gosip atau prasangka; (2) TEORETIS, menyusun kerangka logis sebab-akibat dari hasil observasi; (3) KUMULATIF, teori dibangun dan diperluas dari teori yang ada sebelumnya; dan (4) NON-ETIS, sosiolog tidak menilai baik-buruk atau berdosa-tidaknya suatu fenomena (das sein), melainkan menganalisis faktor penyebab dan strukturnya secara ilmiah dan objektif.',
+    pedagogicalRationale:
+      'Mengajak siswa memandang ruang kelas tempat mereka belajar sehari-hari dengan "kacamata sosiologis" (sociological imagination), melatih sikap ilmiah objektif non-etis saat menganalisis fenomena kelompok sebaya tanpa menghakimi secara moralistik.',
+    riddleHint:
+      '🏫 Datanglah ke RUANG KELAS! Di tempat kita belajar bersama dan berinteraksi menaati tata tertib setiap hari, pindai QR Code untuk membongkar 4 ciri utama sosiologi: Empiris, Teoretis, Kumulatif, dan Non-Etis!',
+    qrCode: 'SOSIOLOGI-POS-4',
+    keyFigures: ['Para Sosiolog Kontemporer & Teoretisi Metode Ilmiah'],
+    keyConcepts: ['Empiris (Berdasarkan Observasi Nyata)', 'Teoretis (Abstraksi Sebab-Akibat)', 'Kumulatif (Menyambung Teori Lama)', 'Non-Etis (Objektif Tanpa Menghakimi Baik/Buruk)', 'Das Sein vs Das Sollen', 'Hakikat Ilmu Sosiologi (Murni & Terapan, Kategoris, Abstrak)'],
+    questionCount: 5,
+  },
+  {
+    posId: 'pos_5',
+    code: 'POS 5 (FINAL)',
+    categoryName: 'POS 5: GURU WALI',
+    locationName: 'Guru Wali Kelas',
+    icon: 'Award',
+    themeColor: 'rose',
+    subtopicTitle: 'Jejak & Sejarah Perkembangan Sosiologi di Indonesia (Babak Final)',
+    shortDesc: 'Babak final di meja Guru Wali Kelas: Meneladani kepemimpinan pamong, kearifan lokal Nusantara, hingga pemikiran Selo Soemardjan sebagai Bapak Sosiologi Indonesia.',
+    locationDescription:
+      'Guru Wali Kelas adalah sosok pamong pendidik yang setiap hari mendampingi, mengayomi, membimbing etika sosial, dan memastikan keharmonisan warga kelas. Menempatkan Pos 5 (Babak Final) di meja Guru Wali memiliki nilai filosofis luhur yang mencerminkan sejarah perkembangan sosiologi di bumi Indonesia. Jauh sebelum sosiologi masuk sebagai mata kuliah universitas, nilai-nilai keteraturan sosial dan kepemimpinan telah tertuang dalam karya sastra kearifan lokal seperti "Serat Wulangreh" oleh Sri Paduka Mangkunegara IV dan ajaran kepemimpinan Perguruan Taman Siswa oleh Ki Hajar Dewantara ("Ing Ngarso Sung Tulodo, Ing Madyo Mangun Karso, Tut Wuri Handayani"). Pasca-kemerdekaan, kuliah sosiologi berbahasa Indonesia pertama kali dirintis di UGM tahun 1948 oleh Prof. Soenario Kolopaking, disusul kehadiran Prof. Dr. Selo Soemardjan sebagai Bapak Sosiologi Indonesia dengan karya legendaris "Social Changes in Jogjakarta" (1962) dan "Setangkai Bunga Sosiologi" (1964).',
+    pedagogicalRationale:
+      'Menghubungkan teori universal sosiologi barat dengan konteks kearifan lokal bangsa Indonesia, serta mengukuhkan peran Guru Wali sebagai representasi kepemimpinan sosial yang memberi teladan (Ing Ngarso Sung Tulodo) dan mengesahkan keberhasilan petualangan belajar siswa.',
+    riddleHint:
+      '👨‍🏫 Menuju Babak Final di dekat GURU WALI KELAS! Temukan kartu QR penutup untuk mengungkap jejak sejarah Sosiologi di bumi Nusantara: dari kearifan lokal, ajaran Ki Hajar Dewantara, hingga pemikiran Selo Soemardjan!',
+    qrCode: 'SOSIOLOGI-POS-5',
+    keyFigures: ['Sri Paduka Mangkunegara IV', 'Ki Hajar Dewantara', 'Prof. Soenario Kolopaking', 'Prof. Dr. Selo Soemardjan (Bapak Sosiologi Indonesia)', 'Soelaeman Soemardi'],
+    keyConcepts: ['Serat Wulangreh (Etika Sosial Kerajaan)', 'Taman Siswa & Ing Ngarso Sung Tulodo', 'Rechtshogeschool Batavia (1924)', 'Kuliah Bahasa Indonesia Pertama UGM (1948)', 'Buku Social Changes in Jogjakarta (1962)', 'Setangkai Bunga Sosiologi (1964)'],
+    questionCount: 5,
+  },
+];
+
 export const SOCIOLOGY_LOCATIONS: LocationConfig[] = [
-  // --- POS 1: REVOLUSI PRANCIS & REVOLUSI INDUSTRI (LATAR BELAKANG KELAHIRAN SOSIOLOGI) ---
+  // --- POS 1: KANTIN (REVOLUSI PRANCIS & REVOLUSI INDUSTRI / SISTEM EKONOMI & KERJA) ---
   {
     id: 'pos_1',
     code: 'POS 1',
-    name: 'Ruang Sejarah & Peradaban',
+    name: 'Kantin',
     qrCode: 'SOSIOLOGI-POS-1',
-    hint: '🏛️ Temukan pos di dekat Ruang Sejarah atau Aula Sekolah. Di sini kamu akan mengungkap bagaimana guncangan Revolusi Prancis dan Revolusi Industri memicu lahirnya Sosiologi!',
+    hint: '🍜 Datanglah ke area KANTIN SEKOLAH! Di tempat berkumpul dan bertransaksi ini, temukan kartu QR Code untuk menyelidiki bagaimana guncangan Revolusi Industri dan Revolusi Prancis mengubah sistem kerja, ekonomi, dan tatanan masyarakat dunia!',
     isFinal: false,
     isActive: true,
-    iconName: 'History',
+    iconName: 'UtensilsCrossed',
     story: {
       chapterNumber: 1,
-      title: 'Pos 1: Badai Revolusi & Kelahiran Ilmu Masyarakat',
-      subtitle: 'Membedah akar sejarah lahirnya sosiologi di Eropa abad ke-18 dan ke-19',
-      imageCaption: 'Ilustrasi Revolusi Industri & Revolusi Prancis: Runtuhnya feodalisme, migrasi massal kaum buruh ke pabrik-pabrik kota, serta kekacauan tatanan sosial di Eropa.',
+      title: 'Pos 1: Badai Revolusi & Kelahiran Ilmu Masyarakat (Kantin)',
+      subtitle: 'Penyelidikan di Kantin: Dari interaksi jual-beli dan pembagian kerja kantin menuju telaah Revolusi Industri & Revolusi Prancis',
+      imageCaption: 'Ilustrasi Interaksi Sosial & Dampak Revolusi Industri: Suasana pembagian kerja dan pertukaran ekonomi di kantin yang mencerminkan transformasi sistem produksi agraris menuju masyarakat industri modern pasca-Revolusi Prancis.',
       visualHighlights: [
+        '🍜 Fenomena Sosial Kantin: Ruang transaksi ekonomi, interaksi antarwarga sekolah, dan pembagian kerja nyata',
         '⚡ Revolusi Prancis (1789): Runtuhnya monarki absolut dan kekacauan tatanan sosial politik',
-        '🏭 Revolusi Industri di Inggris: Mekanisasi mesin uap mengubah masyarakat agraris menjadi industri',
+        '🏭 Revolusi Industri di Inggris: Mekanisasi mesin uap mengubah masyarakat agraris menjadi industri pabrik',
         '🏚️ Masalah Sosial Baru: Urbanisasi tak terkendali, eksploitasi kaum buruh, jam kerja 16 jam, dan permukiman kumuh',
         '💡 Abad Pencerahan (Aufklärung): Keinginan menjelaskan perilaku masyarakat secara ilmiah dan rasional',
       ],
       paragraphs: [
-        'Sosiologi tidak lahir dalam ruang hampa atau ketenangan laboratorium, melainkan lahir dari guncangan sosial dan transformasi dramatis yang melanda benua Eropa pada abad ke-18 dan ke-19. Dua peristiwa mahabesar yang menjadi katalis utama lahirnya ilmu sosiologi adalah Revolusi Prancis (1789) dan Revolusi Industri di Inggris yang menyebar luas ke seluruh daratan Eropa.',
+        'Ketika kita melangkah ke Kantin Sekolah saat jam istirahat, kita menyaksikan pemandangan yang sangat hidup: siswa mengantre dengan tertib, pedagang menyiapkan makanan, terjadi transaksi jual beli, dan obrolan antarkelompok berlangsung hangat. Kantin adalah mikrokosmos interaksi sosial dan sistem pembagian kerja di sekolah. Namun dalam sejarah peradaban manusia, tatanan kerja dan keteraturan sosial seperti ini pernah terguncang hebat pada abad ke-18 dan ke-19. Sosiologi lahir dari guncangan sosial dan transformasi dramatis yang melanda benua Eropa, yang dipicu oleh dua peristiwa mahabesar: Revolusi Prancis (1789) dan Revolusi Industri di Inggris.',
         'Revolusi Prancis pada tahun 1789 menghancurkan tatanan lama (ancien régime) berupa sistem monarki absolut dan dominasi feodalisme kaum bangsawan serta kaum agamawan. Meski mengusung semboyan kebebasan (liberté), persamaan (égalité), dan persaudaraan (fraternité), runtuhnya tatanan politik monarki justru diikuti oleh gelombang kekacauan sosial yang panjang, anarki, pertumpahan darah pada masa Teror, serta ketidakpastian tata aturan masyarakat. Para pemikir Eropa saat itu menyadari bahwa masyarakat membutuhkan ilmu baru yang mampu menjelaskan bagaimana ketertiban sosial (social order) dapat dibangun kembali.',
         'Hampir bersamaan dengan itu, Revolusi Industri di Inggris membawa perubahan radikal dalam sistem ekonomi dan cara manusia berproduksi. Ditemukannya mesin uap oleh James Watt mendorong mekanisasi pabrik-pabrik tekstil dan tambang. Akibatnya, jutaan penduduk desa yang semula bekerja sebagai petani berbondong-bondong pindah ke kota-kota industri (urbanisasi besar-besaran) untuk menjadi buruh pabrik.',
         'Namun, industrialisasi yang pesat melahirkan berbagai krisis kemanusiaan baru: pemerasan tenaga kerja buruh (termasuk perempuan dan anak-anak) dengan jam kerja ekstrem hingga 14-16 jam per hari, upah yang sangat minim, munculnya permukiman kumuh (slum area) yang kotor dan sarang penyakit, angka kejahatan yang melonjak, serta jurang pemisah yang semakin lebar antara pemilik modal (kapitalis) dan kaum buruh miskin (proletar). Hubungan kekeluargaan dan gotong royong tradisional luntur, digantikan oleh individualisme yang dingin.',
         'Di sisi lain, Abad Pencerahan (Aufklärung) telah menanamkan keyakinan bahwa akal budi manusia dan penalaran rasional mampu memecahkan segala misteri alam semesta. Jika ilmu fisika, kimia, dan biologi mampu mengungkap hukum-hukum alam secara ilmiah, maka para ilmuwan berpikir bahwa semestinya perilaku masyarakat manusia juga dapat diselidiki secara ilmiah dan objektif. Kondisi gejolak sosial yang dibarengi dengan semangat ilmiah inilah yang membidani lahirnya sosiologi sebagai disiplin ilmu mandiri.',
       ],
-      summaryClue: 'Pos 1: Sosiologi lahir karena krisis tatanan sosial akibat Revolusi Prancis (keruntuhan monarki feodal) dan Revolusi Industri (urbanisasi, eksploitasi buruh, kemiskinan kota), didorong semangat rasionalitas Abad Pencerahan.',
+      summaryClue: 'Pos 1 (Kantin): Dari interaksi sosial kantin, kita mempelajari bahwa sosiologi lahir karena krisis tatanan sosial akibat Revolusi Prancis (keruntuhan monarki feodal) dan Revolusi Industri (urbanisasi, eksploitasi buruh, kemiskinan kota), didorong rasionalitas Abad Pencerahan.',
       glossary: [
         { word: 'Aufklärung (Abad Pencerahan)', meaning: 'Zaman pencerahan di Eropa abad ke-18 yang menjunjung tinggi kekuatan akal budi dan rasionalitas ilmiah' },
         { word: 'Revolusi Industri', meaning: 'Transformasi radikal dari produksi manual menggunakan tenaga manusia/hewan menjadi tenaga mesin pabrik' },
@@ -54,36 +176,36 @@ export const SOCIOLOGY_LOCATIONS: LocationConfig[] = [
     },
   },
 
-  // --- POS 2: AUGUSTE COMTE & POSITIVISME ---
+  // --- POS 2: RUANG LABORATORIUM (AUGUSTE COMTE, POSITIVISME, & HUKUM 3 TAHAP) ---
   {
     id: 'pos_2',
     code: 'POS 2',
-    name: 'Taman Filsafat & Sains',
+    name: 'Ruang Laboratorium',
     qrCode: 'SOSIOLOGI-POS-2',
-    hint: '🌿 Datanglah ke area taman tengah sekolah. Temukan kartu QR untuk mempelajari pemikiran Auguste Comte, sang Bapak Sosiologi Dunia, dan Hukum Tiga Tahap Pemikiran Manusia!',
+    hint: '🔬 Kunjungi RUANG LABORATORIUM! Di tempat eksperimen dan pembuktian fakta empiris ini, temukan kartu QR untuk mempelajari pemikiran Auguste Comte: mengapa sosiologi lahir sebagai ilmu positif seperti ilmu alam dan Hukum Tiga Tahap Pemikiran Manusia!',
     isFinal: false,
     isActive: true,
-    iconName: 'BookMarked',
+    iconName: 'FlaskConical',
     story: {
       chapterNumber: 2,
-      title: 'Pos 2: Auguste Comte & Lahirnya Positivisme',
-      subtitle: 'Memahami pencetusan nama sosiologi, hukum tiga tahap, dan fisika sosial',
-      imageCaption: 'Ilustrasi Auguste Comte (1798–1857): Tokoh pencetus istilah sosiologi dalam bukunya Cours de Philosophie Positive serta perumusan Hukum Tiga Tahap Pemikiran Manusia.',
+      title: 'Pos 2: Auguste Comte & Lahirnya Positivisme (Ruang Laboratorium)',
+      subtitle: 'Penyelidikan di Laboratorium: Dari metode uji sains dan eksperimen menuju lahirnya Sosiologi sebagai Fisika Sosial',
+      imageCaption: 'Ilustrasi Auguste Comte (1798–1857) & Metode Laboratorium: Menerapkan metode observasi objektif dan eksperimen ilmu alam ke dalam pengamatan gejala masyarakat (Positivisme & Hukum Tiga Tahap).',
       visualHighlights: [
-        '👑 Auguste Comte (1798–1857): Dikenal sebagai Bapak Sosiologi Dunia (The Father of Sociology)',
+        '🔬 Cermin Laboratorium: Tempat eksperimen ilmiah, pembuktian fakta objektif, dan pengujian empiris',
+        '👑 Auguste Comte (1798–1857): Bapak Sosiologi Dunia perumus Fisika Sosial (Physique Sociale)',
         '📖 Istilah Sosiologi (1838): Diperkenalkan dalam buku Cours de Philosophie Positive jilid ke-4',
-        '🔬 Fisika Sosial (Physique Sociale): Gagasan awal meneliti masyarakat dengan metode ilmu alam',
-        '📈 Hukum 3 Tahap: Tahap Teologis, Tahap Metafisik, dan Tahap Positif/Ilmiah',
+        '📈 Hukum 3 Tahap: Evolusi akal budi dari Tahap Teologis, Metafisik, hingga Tahap Positif/Ilmiah',
       ],
       paragraphs: [
-        'Tokoh paling sentral yang dinobatkan sebagai "Bapak Sosiologi Dunia" adalah filsuf asal Prancis bernama Isidore Auguste Marie François Xavier Comte, yang lebih dikenal sebagai Auguste Comte (1798–1857). Menghadapi kekacauan politik dan sosial di Prancis pascarevolusi, Comte mencita-citakan suatu ilmu yang mampu membimbing penataan kembali masyarakat dengan prinsip-prinsip ilmiah yang teratur dan pasti.',
+        'Melangkahkan kaki ke dalam Ruang Laboratorium mempertemukan kita dengan deretan mikroskop, tabung reaksi, alat ukur presisi, dan bagan ilmiah. Di laboratorium, suatu kesimpulan tidak boleh didasarkan pada takhayul atau dugaan semata, melainkan wajib dibuktikan lewat pengamatan fakta objektif dan eksperimen yang teruji. Semangat metode ilmiah laboratorium inilah yang memicu pemikiran tokoh paling sentral yang dinobatkan sebagai "Bapak Sosiologi Dunia", yaitu filsuf asal Prancis bernama Auguste Comte (1798–1857). Menghadapi kekacauan politik dan sosial di Prancis pascarevolusi, Comte mencita-citakan suatu ilmu yang mampu membimbing penataan kembali masyarakat dengan prinsip-prinsip ilmiah yang teratur dan pasti layaknya ilmu alam.',
         'Pada awalnya, Comte menyebut cabang ilmu baru ini dengan istilah "Fisika Sosial" (physique sociale). Hal ini karena Comte terinspirasi oleh keberhasilan ilmu fisika yang mampu menemukan hukum-hukum pasti pergerakan benda alam semesta. Namun, karena istilah fisika sosial kemudian digunakan oleh seorang ilmuwan statistik Belgia bernama Adolphe Quetelet untuk penelitian statistiknya, Comte memutuskan mencari nama baru yang lebih khas dan orisinal.',
         'Maka pada tahun 1838, dalam mahakaryanya yang berjudul "Cours de Philosophie Positive" (Kursus Filsafat Positif) jilid ke-4, Comte secara resmi mencetuskan istilah "SOCIOLOGIE" (Sosiologi). Secara etimologis, kata sosiologi merupakan gabungan dari dua bahasa kuno: kata Latin "socius" yang berarti kawan, teman, atau masyarakat, dan kata Yunani "logos" yang bermakna kata, pembicaraan, atau ilmu pengetahuan. Dengan demikian, sosiologi secara harafiah berarti ilmu tentang masyarakat.',
         'Sumbangan pemikiran Auguste Comte yang paling termasyhur adalah "Hukum Tiga Tahap Pemikiran Manusia" (The Law of Three Stages), yang menjelaskan bahwa akal budi manusia dan peradaban masyarakat berkembang melalui tiga tingkatan evolusi pemikiran. Tahap pertama adalah Tahap Teologis (Fiktif), di mana segala gejala alam dan peristiwa sosial diyakini dikendalikan oleh kekuatan gaib, dewa-dewi, roh nenek moyang, atau Tuhan. Tahap ini dibagi menjadi animisme, politeisme, dan monoteisme.',
         'Tahap kedua adalah Tahap Metafisik (Abstrak), yang merupakan tahap transisi. Pada tahap ini, kepercayaan terhadap kekuatan gaib digantikan oleh kekuatan-kekuatan abstrak, prinsip alamiah, atau filsafat spekulatif (seperti konsep "kodrat alam" atau "keadilan esensial"). Tahap ketiga adalah puncak pemikiran manusia, yaitu Tahap Positif (Ilmiah/Rasional). Pada tahap positif, manusia tidak lagi mencari penyebab mutlak di balik alam gaib, melainkan mengamati fakta-fakta empiris secara objektif, melakukan eksperimen, dan mencari hukum-hukum sebab-akibat (kausalitas) yang mengatur masyarakat.',
         'Bagi Comte, sosiologi berada di puncak hierarki ilmu pengetahuan (setelah matematika, astronomi, fisika, kimia, dan biologi). Sosiologi adalah ilmu positif yang tugas utamanya membedah dua aspek besar masyarakat: Statika Sosial (social statics), yaitu kajian tentang struktur dan keteraturan sosial, serta Dinamika Sosial (social dynamics), yaitu kajian tentang perubahan dan perkembangan masyarakat dari waktu ke waktu.',
       ],
-      summaryClue: 'Pos 2: Auguste Comte mencetuskan istilah "Sosiologi" (1838) dan aliran Positivisme. Beliau merumuskan Hukum 3 Tahap: Teologis (supranatural), Metafisik (kekuatan abstrak), dan Positif (fakta empiris & hukum sebab-akibat).',
+      summaryClue: 'Pos 2 (Ruang Laboratorium): Di laboratorium pembuktian sains, Auguste Comte mencetuskan istilah "Sosiologi" (1838) dan Positivisme. Beliau merumuskan Hukum 3 Tahap: Teologis (supranatural), Metafisik (kekuatan abstrak), dan Positif (fakta empiris & kausalitas).',
       glossary: [
         { word: 'Socius & Logos', meaning: 'Akar kata sosiologi: socius (Latin = kawan/masyarakat) dan logos (Yunani = ilmu/pengetahuan)' },
         { word: 'Positivisme', meaning: 'Pandangan filosofis bahwa kebenaran sejati hanya diperoleh melalui pembuktian fakta empiris dan metode ilmiah' },
@@ -94,35 +216,36 @@ export const SOCIOLOGY_LOCATIONS: LocationConfig[] = [
     },
   },
 
-  // --- POS 3: TOKOH-TOKOH KLASIK SOSIOLOGI ---
+  // --- POS 3: PERPUSTAKAAN (EMPAT PILAR TOKOH KLASIK SOSIOLOGI) ---
   {
     id: 'pos_3',
     code: 'POS 3',
-    name: 'Pojok Baca Perpustakaan',
+    name: 'Perpustakaan',
     qrCode: 'SOSIOLOGI-POS-3',
-    hint: '📚 Masuki area perpustakaan sekolah. Pindai QR Code di dekat rak ilmu sosial untuk menelusuri pemikiran 4 pilar tokoh klasik: Émile Durkheim, Karl Marx, Max Weber, dan Herbert Spencer!',
+    hint: '📚 Masuki area PERPUSTAKAAN SEKOLAH! Temukan kartu QR Code di antara rak buku ilmu sosial untuk menelusuri pemikiran 4 pilar tokoh klasik: Émile Durkheim, Karl Marx, Max Weber, dan Herbert Spencer!',
     isFinal: false,
     isActive: true,
-    iconName: 'GraduationCap',
+    iconName: 'BookOpen',
     story: {
       chapterNumber: 3,
-      title: 'Pos 3: Empat Pilar Tokoh Klasik Sosiologi',
-      subtitle: 'Membedah pemikiran Émile Durkheim, Karl Marx, Max Weber, dan Herbert Spencer',
-      imageCaption: 'Empat Raksasa Teori Sosiologi Klasik: Durkheim (Fakta Sosial & Solidaritas), Marx (Konflik Kelas & Materialisme Historis), Weber (Verstehen & Tindakan Sosial), dan Spencer (Evolusi Sosial / Survival of the Fittest).',
+      title: 'Pos 3: Empat Pilar Tokoh Klasik Sosiologi (Perpustakaan)',
+      subtitle: 'Penyelidikan di Perpustakaan: Menjelajahi khazanah literatur teori klasik Durkheim, Marx, Weber, dan Spencer',
+      imageCaption: 'Empat Raksasa Teori Sosiologi Klasik di Rak Perpustakaan: Durkheim (Fakta Sosial & Solidaritas), Marx (Konflik Kelas & Materialisme Historis), Weber (Verstehen & Tindakan Sosial), dan Spencer (Evolusi Sosial / Survival of the Fittest).',
       visualHighlights: [
+        '📚 Khazanah Perpustakaan: Menyimpan literatur sejarah, jurnal pemikiran, dan buku babon teori sosial',
         '🏛️ Émile Durkheim: Konsep Fakta Sosial, Solidaritas Mekanik vs Organik, dan studi Bunuh Diri (Suicide)',
         '⚒️ Karl Marx: Teori Konflik Kelas borjuis vs proletar, alienasi buruh, dan materialisme historis',
         '🧠 Max Weber: Pendekatan Verstehen (pemahaman interpretatif) dan 4 tipe Tindakan Sosial',
         '🌱 Herbert Spencer: Teori Evolusi Sosial, Analogi Organik, dan konsep Survival of the Fittest',
       ],
       paragraphs: [
-        'Setelah fondasi diletakkan oleh Auguste Comte, sosiologi dimatangkan menjadi disiplin ilmu ilmiah yang kokoh oleh empat tokoh klasik utama: Émile Durkheim, Karl Marx, Max Weber, dan Herbert Spencer. Masing-masing tokoh ini membawa sudut pandang (paradigma) yang khas dalam melihat masyarakat.',
+        'Perpustakaan sekolah adalah ruang hening yang sarat dengan khazanah kebijaksanaan, tempat tersimpannya buku-buku teks induk, ensiklopedia, dan risalah pemikiran para sarjana besar dunia. Di antara deretan rak buku ilmu sosial di perpustakaan inilah kita menjumpai empat pilar raksasa sosiologi klasik: Émile Durkheim, Karl Marx, Max Weber, dan Herbert Spencer. Setelah fondasi diletakkan oleh Auguste Comte, keempat tokoh inilah yang menulis karya-karya abadi dan mematangkan sosiologi menjadi disiplin akademis yang kokoh dengan sudut pandang (paradigma) yang saling melengkapi.',
         'ÉMILE DURKHEIM (1858–1917) adalah tokoh yang berhasil menjadikan sosiologi sebagai mata kuliah resmi di universitas Prancis. Karyanya "The Rules of Sociological Method" (1895) menegaskan bahwa objek kajian sosiologi adalah FAKTA SOSIAL (social facts). Fakta sosial adalah cara bertindak, berpikir, dan merasa yang berada di luar diri individu (eksternal), memiliki daya paksa yang mengendalikan individu (koersif), serta berlaku umum di seluruh masyarakat (general). Durkheim juga membagi masyarakat menjadi Solidaritas Mekanik (masyarakat tradisional yang diikat kesadaran kolektif seragam) dan Solidaritas Organik (masyarakat modern yang diikat oleh saling ketergantungan pembagian kerja yang kompleks).',
         'KARL MARX (1818–1883) memandang masyarakat dari kacamata materialisme historis dan pertentangan kelas. Menurut Marx, motor penggerak perubahan sejarah manusia bukanlah gagasan atau agama, melainkan struktur ekonomi dan konflik antar-kelas sosial. Dalam masyarakat kapitalis industri, masyarakat terbelah menjadi dua kelas yang saling bertentangan: Kelas Borjuis (pemilik alat produksi, pabrik, dan modal) serta Kelas Proletar (kaum buruh tertindas yang hanya memiliki tenaga kerja). Marx juga memperkenalkan konsep alienasi (keterasingan), di mana kaum buruh terasing dari hasil karyanya, dari proses kerja yang menjemukan, dan dari potensi kemanusiaannya sendiri.',
         'MAX WEBER (1864–1920) berargumen bahwa sosiologi tidak hanya meneliti struktur luar masyarakat, melainkan harus memahami makna di balik tindakan manusia. Weber memperkenalkan metode VERSTEHEN (pemahaman mendalam yang berempati) untuk menafsirkan makna subjektif dari TINDAKAN SOSIAL (social action). Weber mengklasifikasikan tindakan sosial menjadi empat tipe: (1) Tindakan Rasional Instrumental (memperhitungkan tujuan dan sarana secara efisien), (2) Tindakan Rasional Berorientasi Nilai (berdasarkan nilai moral/keyakinan mutlak), (3) Tindakan Tradisional (karena kebiasaan adat), dan (4) Tindakan Afektif (didorong luapan emosi seketika). Dalam bukunya "The Protestant Ethic and the Spirit of Capitalism", Weber membuktikan bahwa ajaran asketisme Calvinis berkontribusi membidani etos kerja kapitalisme modern.',
         'HERBERT SPENCER (1820–1903) dari Inggris mempopulerkan teori Evolusi Sosial dengan menerapkan gagasan biologi Charles Darwin ke dalam sosiologi. Spencer memperkenalkan konsep ANALOGI ORGANIK, yaitu memandang masyarakat laksana organisme tubuh hidup; jika satu organ terganggu, organ lain akan merespons. Spencer juga mencetuskan prinsip "Survival of the Fittest", di mana masyarakat berevolusi dari bentuk sederhana yang homogen menuju bentuk yang semakin kompleks dan heterogen.',
       ],
-      summaryClue: 'Pos 3: Durkheim (Fakta Sosial, Solidaritas Mekanik & Organik), Marx (Konflik Kelas Borjuis vs Proletar, Alienasi), Weber (Metode Verstehen, Tindakan Sosial, Etika Protestan), dan Spencer (Evolusi Sosial & Analogi Organik).',
+      summaryClue: 'Pos 3 (Perpustakaan): Dari rak literatur sosiologi, kita membedah 4 tokoh klasik: Durkheim (Fakta Sosial, Solidaritas Mekanik & Organik), Marx (Konflik Kelas Borjuis vs Proletar, Alienasi), Weber (Metode Verstehen, Tindakan Sosial), dan Spencer (Evolusi Sosial & Analogi Organik).',
       glossary: [
         { word: 'Fakta Sosial', meaning: 'Cara bertindak, berpikir, dan merasa yang bersifat eksternal, koersif (memaksa), dan umum dalam masyarakat (Durkheim)' },
         { word: 'Solidaritas Organik', meaning: 'Keterikatan sosial masyarakat modern yang didasarkan pada pembagian kerja dan saling ketergantungan fungsional' },
@@ -133,36 +256,37 @@ export const SOCIOLOGY_LOCATIONS: LocationConfig[] = [
     },
   },
 
-  // --- POS 4: CIRI-CIRI & HAKIKAT SOSIOLOGI SEBAGAI ILMU ---
+  // --- POS 4: RUANG KELAS (CIRI-CIRI & HAKIKAT SOSIOLOGI SEBAGAI ILMU) ---
   {
     id: 'pos_4',
     code: 'POS 4',
-    name: 'Laboratorium IPS & Riset',
+    name: 'Ruang Kelas',
     qrCode: 'SOSIOLOGI-POS-4',
-    hint: '🔬 Kunjungi Laboratorium IPS / Komputer. Pindai QR Code untuk membongkar 4 ciri utama sosiologi: Empiris, Teoretis, Kumulatif, dan Non-Etis!',
+    hint: '🏫 Datanglah ke RUANG KELAS! Di tempat kita belajar bersama dan berinteraksi menaati tata tertib setiap hari, pindai QR Code untuk membongkar 4 ciri utama sosiologi: Empiris, Teoretis, Kumulatif, dan Non-Etis!',
     isFinal: false,
     isActive: true,
-    iconName: 'Microscope',
+    iconName: 'School',
     story: {
       chapterNumber: 4,
-      title: 'Pos 4: Ciri-Ciri & Hakikat Sosiologi sebagai Ilmu',
-      subtitle: 'Memahami empat karakteristik ilmiah sosiologi dan perbedaannya dengan ilmu sosial lain',
-      imageCaption: 'Empat Karakteristik Utama Sosiologi sebagai Ilmu Pengetahuan: Empiris (berdasarkan fakta lapangan), Teoretis (abstraksi logis), Kumulatif (akumulasi teori yang diperluas), dan Non-Etis (tidak menghakimi baik-buruk).',
+      title: 'Pos 4: Ciri-Ciri & Hakikat Sosiologi sebagai Ilmu (Ruang Kelas)',
+      subtitle: 'Penyelidikan di Ruang Kelas: Menjadikan ruang belajar sehari-hari sebagai laboratorium nyata pengamatan 4 ciri sosiologi',
+      imageCaption: 'Empat Karakteristik Utama Sosiologi sebagai Ilmu Pengetahuan di Ruang Kelas: Mengamati realitas interaksi kelas secara Empiris (fakta lapangan), Teoretis (abstraksi sebab-akibat), Kumulatif (perluasan teori), dan Non-Etis (objektif tanpa menghakimi).',
       visualHighlights: [
-        '🔍 EMPIRIS: Didasarkan pada observasi realitas dan akal sehat, bukan prasangka atau spekulasi liar',
-        '📊 TEORETIS: Menyusun abstraksi dan kesimpulan logis yang menjelaskan hubungan sebab-akibat',
-        '📚 KUMULATIF: Teori sosiologi dibangun atas dasar teori yang sudah ada, diperbaiki dan diperhalus',
-        '⚖️ NON-ETIS: Tidak mempersoalkan baik atau buruknya suatu fakta, melainkan menjelaskan fakta secara ilmiah',
+        '🏫 Realitas Ruang Kelas: Tata tertib kelas, kesepakatan belajar, dan dinamika interaksi sosial siswa',
+        '🔍 EMPIRIS: Didasarkan pada observasi fakta interaksi nyata dan akal sehat, bukan prasangka spekulatif',
+        '📊 TEORETIS: Menyusun abstraksi logis hubungan sebab-akibat dari hasil pengamatan di kelas/masyarakat',
+        '📚 KUMULATIF: Teori sosiologi dibangun dan diperluas atas dasar teori yang sudah ada sebelumnya',
+        '⚖️ NON-ETIS: Tidak menghakimi baik atau buruknya suatu fakta sosial, melainkan membedahnya secara ilmiah',
       ],
       paragraphs: [
-        'Sebagai salah satu rumpun ilmu sosial (social sciences), sosiologi memiliki kedudukan yang unik dan memiliki metode penelitian ilmiah yang ketat. Sosiologi bukan sekadar kumpulan nasihat moral atau obrolan santai di warung kopi. Agar suatu pengetahuan dapat diakui sebagai sosiologi yang ilmiah, sosiologi wajib memenuhi empat ciri utama.',
+        'Ruang Kelas tempat kita berkumpul setiap hari sesungguhnya adalah laboratorium sosiologi mini yang paling nyata. Di dalam ruang kelas terdapat struktur sosial (ada ketua kelas dan seksi piket), aturan norma tertulis dan tidak tertulis, interaksi belajar kelompok, hingga perbedaan latar belakang siswa. Namun, agar pengamatan terhadap peristiwa di ruang kelas dan masyarakat luas diakui sebagai kajian ilmiah (bukan sekadar obrolan santai atau gosip di kelas), sosiologi wajib memenuhi empat ciri karakteristik keilmuan yang baku dan ketat.',
         'Ciri pertama adalah EMPIRIS. Sosiologi didasarkan pada hasil pengamatan langsung (observasi) dan penalaran akal sehat terhadap kenyataan yang benar-benar terjadi di masyarakat. Data yang diperoleh bukan hasil khayalan, tebakan spekulatif, atau ramalan mistis, melainkan data faktual yang dapat diuji dan diverifikasi kebenarannya oleh peneliti lain.',
         'Ciri kedua adalah TEORETIS. Sosiologi selalu berusaha menyusun abstraksi dari data-data observasi yang telah dikumpulkan di lapangan. Abstraksi ini adalah kerangka konseptual logis yang menghubungkan berbagai fakta sehingga membentuk pernyataan sebab-akibat (kausalitas). Dengan menyusun teori, sosiolog tidak hanya sekadar mendeskripsikan apa yang terjadi, tetapi mampu menjelaskan mengapa dan bagaimana fenomena sosial itu terjadi.',
         'Ciri ketiga adalah KUMULATIF. Teori-teori dalam sosiologi tidak berdiri sendiri secara terisolasi atau muncul tiba-tiba dari nol. Teori sosiologi dibangun, disusun, dan dikembangkan atas dasar teori-teori terdahulu yang sudah ada. Sosiolog masa kini menguji kembali teori-teori klasik, lalu memperluas, menyempurnakan, merevisi, dan memperhalus teori tersebut agar relevan dengan perkembangan zaman kontemporer.',
         'Ciri keempat yang sangat krusial adalah NON-ETIS. Sosiologi bertugas mengkaji fenomena sosial apa adanya (das sein), bukan menetapkan apa yang seharusnya terjadi menurut norma moral tertentu (das sollen). Sosiolog tidak bertindak sebagai hakim moral yang menilai apakah suatu tradisi, perilaku tawuran, atau gaya hidup remaja itu "baik", "buruk", "berdosa", atau "terpuji". Fokus utama sosiolog adalah membedah secara objektif: apa faktor pemicunya, bagaimana strukturnya, dan apa dampaknya bagi keteraturan sosial.',
         'Mengenai hakikatnya, sosiologi adalah ilmu sosial (bukan ilmu alam), ilmu kategoris (mengkaji apa yang terjadi, bukan apa yang semestinya), ilmu murni (pure science) sekaligus ilmu terapan (applied science), ilmu abstrak (bukan konkret fisik), serta ilmu rasional dan empiris yang menghasilkan pengertian-pengertian umum.',
       ],
-      summaryClue: 'Pos 4: 4 Karakteristik ilmiah sosiologi: Empiris (fakta observasi lapangan), Teoretis (abstraksi sebab-akibat), Kumulatif (perbaikan/perluasan teori lama), dan Non-Etis (menjelaskan fakta secara ilmiah tanpa menilai baik/buruk).',
+      summaryClue: 'Pos 4 (Ruang Kelas): Di ruang interaksi kelas, kita memahami 4 karakteristik ilmiah sosiologi: Empiris (fakta observasi lapangan), Teoretis (abstraksi sebab-akibat), Kumulatif (perluasan teori lama), dan Non-Etis (menjelaskan fakta secara ilmiah tanpa menilai baik/buruk).',
       glossary: [
         { word: 'Empiris', meaning: 'Berdasarkan pengamatan dan bukti nyata di lapangan serta penalaran akal sehat, bukan spekulasi' },
         { word: 'Teoretis', meaning: 'Penyusunan abstraksi logis yang menjelaskan hubungan sebab-akibat dari hasil observasi' },
@@ -173,36 +297,37 @@ export const SOCIOLOGY_LOCATIONS: LocationConfig[] = [
     },
   },
 
-  // --- POS 5: SEJARAH PERKEMBANGAN SOSIOLOGI DI INDONESIA (BABAK FINAL) ---
+  // --- POS 5: GURU WALI (SEJARAH PERKEMBANGAN SOSIOLOGI DI INDONESIA / BABAK FINAL) ---
   {
     id: 'pos_5',
     code: 'POS 5 (FINAL)',
-    name: 'Ruang Budaya & Kebangsaan',
+    name: 'Guru Wali',
     qrCode: 'SOSIOLOGI-POS-5',
-    hint: '🇮🇩 Menuju Pos Babak Final di Ruang Kebangsaan / Balai Siswa! Temukan rahasia jejak sejarah Sosiologi di Nusantara dari ajaran Ki Hajar Dewantara hingga pemikiran Selo Soemardjan!',
+    hint: '👨‍🏫 Menuju Babak Final di dekat GURU WALI KELAS! Temukan kartu QR penutup untuk mengungkap jejak sejarah Sosiologi di bumi Nusantara: dari kearifan lokal, ajaran Ki Hajar Dewantara, hingga pemikiran Selo Soemardjan!',
     isFinal: true,
     isActive: true,
     iconName: 'Award',
     story: {
       chapterNumber: 5,
-      title: 'Pos 5: Jejak Sosiologi di Bumi Nusantara',
-      subtitle: 'Dari ajaran kearifan lokal, perjuangan kemerdekaan, hingga lahirnya sosiologi Indonesia modern',
-      imageCaption: 'Perkembangan Sosiologi di Indonesia: Dari naskah Serat Wulangreh, konsep perguruan Taman Siswa oleh Ki Hajar Dewantara, kuliah pertama Prof. Soenario Kolopaking, hingga Bapak Sosiologi Indonesia Prof. Selo Soemardjan.',
+      title: 'Pos 5: Jejak Sosiologi di Bumi Nusantara (Guru Wali)',
+      subtitle: 'Babak Final di Meja Guru Wali: Meneladani kepemimpinan pamong, kearifan lokal, hingga dedikasi Bapak Sosiologi Indonesia Selo Soemardjan',
+      imageCaption: 'Perkembangan Sosiologi di Indonesia & Peran Guru Wali: Keteladanan kepemimpinan Ing Ngarso Sung Tulodo Ki Hajar Dewantara, kearifan Serat Wulangreh, hingga transformasi sosial masyarakat modern oleh Prof. Selo Soemardjan.',
       visualHighlights: [
+        '👨‍🏫 Figur Guru Wali Kelas: Pendidik, pengayom, dan panutan keteladanan kepemimpinan Ing Ngarso Sung Tulodo',
         '📜 Masa Pra-Kemerdekaan: Ajaran etika sosial dalam Serat Wulangreh karya Sri Paduka Mangkunegara IV',
-        '🏫 Ki Hajar Dewantara: Konsep kepemimpinan & kekeluargaan dalam sistem pendidikan Taman Siswa',
-        '🎓 Kuliah Pertama (UGM): Diberikan dalam Bahasa Indonesia oleh Prof. Soenario Kolopaking',
-        '🌟 Selo Soemardjan: Bapak Sosiologi Indonesia dengan karya Social Changes in Jogjakarta (1962)',
+        '🏫 Ki Hajar Dewantara: Konsep kepemimpinan & sistem pendidikan kemasyarakatan Perguruan Taman Siswa',
+        '🎓 Kuliah Pertama (UGM): Diberikan resmi dalam Bahasa Indonesia oleh Prof. Soenario Kolopaking (1948)',
+        '🌟 Selo Soemardjan: Bapak Sosiologi Indonesia dengan karya monumental Social Changes in Jogjakarta (1962)',
       ],
       paragraphs: [
-        'Meskipun sosiologi lahir dan mekar di benua Eropa, benih-benih pemikiran mengenai keteraturan sosial, etika hubungan antarmasyarakat, dan dinamika kebudayaan sesungguhnya telah mengakar kuat dalam peradaban Nusantara jauh sebelum masa kolonial modern.',
+        'Selamat tiba di Pos 5 (Babak Final), para Detektif Sosiologi! Di meja Guru Wali Kelas ini, kita menemui sosok pendidik dan pamong yang setiap hari mendampingi, memantau interaksi kelas, dan membimbing keharmonisan siswa. Peran Guru Wali yang sarat keteladanan ini mencerminkan hakikat bahwa pemikiran tentang keteraturan sosial, etika hubungan antarmasyarakat, dan dinamika kebudayaan di Nusantara sesungguhnya telah berakar kuat jauh sebelum masa kemerdekaan melalui kearifan kepemimpinan para leluhur bangsa.',
         'Pada masa kerajaan tradisional Jawa, Sri Paduka Mangkunegara IV dari Surakarta telah menulis karya sastra filosofis "Serat Wulangreh". Naskah ini mengajarkan tata hubungan sosial antargolongan, etika bergaul antara rakyat jelata dengan para pemimpin, serta bagaimana memelihara keselarasan batin dan harmoni sosial di masyarakat.',
-        'Memasuki era kebangkitan nasional pada awal abad ke-20, tokoh pendidikan nasional Ki Hajar Dewantara meletakkan dasar-dasar sosiologi pendidikan dan kepemimpinan melalui Perguruan Taman Siswa (berdiri 1922). Ki Hajar merumuskan konsep kepemimpinan sosial yang melegenda: "Ing Ngarso Sung Tulodo" (di depan memberi teladan), "Ing Madyo Mangun Karso" (di tengah membangkitkan semangat), dan "Tut Wuri Handayani" (di belakang memberi dorongan), yang sarat dengan nilai kekeluargaan dan demokrasi kerakyatan khas Indonesia.',
+        'Memasuki era kebangkitan nasional pada awal abad ke-20, tokoh pendidikan nasional Ki Hajar Dewantara meletakkan dasar-dasar sosiologi pendidikan dan kepemimpinan melalui Perguruan Taman Siswa (berdiri 1922). Ki Hajar merumuskan konsep kepemimpinan sosial yang melegenda dan dipraktikkan para Guru Wali kita: "Ing Ngarso Sung Tulodo" (di depan memberi teladan), "Ing Madyo Mangun Karso" (di tengah membangkitkan semangat), dan "Tut Wuri Handayani" (di belakang memberi dorongan), yang sarat dengan nilai kekeluargaan dan demokrasi kerakyatan khas Indonesia.',
         'Sosiologi formal pertama kali diajarkan di Indonesia pada zaman penjajahan Belanda di Rechtshogeschool (Sekolah Tinggi Hukum) di Batavia (Jakarta) sekitar tahun 1924, namun hanya sebagai mata kuliah penunjang ilmu hukum dan menggunakan buku rujukan bahasa Belanda. Perkuliahan sempat terhenti pada masa pendudukan Jepang (1942–1945).',
         'Titik balik bersejarah terjadi setelah proklamasi kemerdekaan Republik Indonesia. Pada tahun 1948, di Akademi Ilmu Politik Yogyakarta (yang kelak dilebur menjadi Universitas Gadjah Mada), perkuliahan sosiologi untuk pertama kalinya diberikan secara resmi menggunakan BAHASA INDONESIA oleh Prof. Soenario Kolopaking.',
         'Tokoh yang kemudian dinobatkan sebagai "BAPAK SOSIOLOGI INDONESIA" adalah Prof. Dr. Selo Soemardjan (1915–2003). Disertasi doktoral beliau di Cornell University, Amerika Serikat, yang berjudul "Social Changes in Jogjakarta" (1962) menjadi karya sosiologi empiris paling berpengaruh yang membedah bagaimana masyarakat feodal keraton Yogyakarta bertransformasi secara damai menjadi masyarakat republik yang modern dan demokratis. Bersama Soelaeman Soemardi, Selo Soemardjan menerbitkan buku "Setangkai Bunga Sosiologi" (1964) yang menjadi buku pegangan utama mahasiswa sosiologi di seluruh Indonesia.',
       ],
-      summaryClue: 'Pos 5: Sosiologi di Indonesia berakar dari kearifan lokal (Serat Wulangreh, Ki Hajar Dewantara), kuliah pertama berbahasa Indonesia oleh Prof. Soenario Kolopaking di UGM, serta ketokohan Prof. Selo Soemardjan (Bapak Sosiologi Indonesia).',
+      summaryClue: 'Pos 5 (Guru Wali): Bersama keteladanan Guru Wali, kita merangkum sejarah sosiologi Indonesia: kearifan Serat Wulangreh, kepemimpinan Ki Hajar Dewantara, kuliah pertama Prof. Soenario Kolopaking di UGM, serta ketokohan Prof. Selo Soemardjan (Bapak Sosiologi Indonesia).',
       glossary: [
         { word: 'Serat Wulangreh', meaning: 'Karya sastra Mangkunegara IV yang berisi ajaran etika hubungan sosial dan tata krama kemasyarakatan' },
         { word: 'Taman Siswa', meaning: 'Lembaga pendidikan rintisan Ki Hajar Dewantara yang mengintegrasikan nilai sosiologis kepemimpinan dan kekeluargaan' },
@@ -781,3 +906,277 @@ c. Metode Penelitian:
     },
   },
 ];
+
+export interface ModulAjarStructure {
+  identitas: {
+    mataPelajaran: string;
+    faseKelas: string;
+    semester: string;
+    alokasiWaktu: string;
+    tahunAjaran: string;
+    targetPesertaDidik: string;
+    modelPembelajaran: string;
+    satuanPendidikan: string;
+  };
+  profilPelajarPancasila: {
+    dimensi: string;
+    deskripsi: string;
+  }[];
+  kompetensiAwal: string[];
+  saranaPrasarana: string[];
+  capaianPembelajaran: string;
+  tujuanPembelajaran: {
+    nomor: string;
+    teks: string;
+    posTerkait: string;
+  }[];
+  pemahamanBermakna: string;
+  pertanyaanPemantik: string[];
+  kegiatanPembelajaran: {
+    pertemuan: number;
+    posId: string;
+    posName: string;
+    topik: string;
+    alokasi: string;
+    pendahuluan: string[];
+    intiInquiry: string[];
+    penutup: string[];
+  }[];
+  diferensiasi: {
+    konten: string;
+    proses: string;
+    produk: string;
+  };
+  asesmenRencana: {
+    diagnostik: string;
+    formatif: string;
+    sumatif: string;
+  };
+  refleksi: {
+    guru: string[];
+    pesertaDidik: string[];
+  };
+  daftarPustaka: string[];
+}
+
+export const SOCIOLOGY_MODUL_AJAR: ModulAjarStructure = {
+  identitas: {
+    mataPelajaran: 'Sosiologi',
+    faseKelas: 'Fase E / Kelas X (Sepuluh) SMA/MA',
+    semester: 'Semester 1 (Ganjil)',
+    alokasiWaktu: '5 Pertemuan (10 JP @ 45 Menit)',
+    tahunAjaran: '2026 / 2027',
+    targetPesertaDidik: 'Peserta Didik Reguler / Tipikal (32–36 Siswa)',
+    modelPembelajaran: 'Station-Based Contextual Inquiry (Outdoor QR Learning)',
+    satuanPendidikan: 'Sekolah Menengah Atas (SMA / MA)',
+  },
+  profilPelajarPancasila: [
+    {
+      dimensi: 'Bernalar Kritis',
+      deskripsi: 'Peserta didik menganalisis dinamika perubahan sosial, membedah hubungan sebab-akibat Revolusi Industri dan Prancis, serta membandingkan teori sosiologi klasik secara objektif.',
+    },
+    {
+      dimensi: 'Gotong Royong',
+      deskripsi: 'Peserta didik berkolaborasi aktif dalam regu investigasi lapangan di 5 pos sekolah, berdiskusi memecahkan teka-teki, dan berbagi tugas pencatatan literasi.',
+    },
+    {
+      dimensi: 'Mandiri',
+      deskripsi: 'Peserta didik menyimak artikel di setiap pos secara cermat, mencatat intisari materi penting di buku catatan pribadi, dan menyelesaikan kuis mandiri dengan penuh tanggung jawab.',
+    },
+    {
+      dimensi: 'Berkebinekaan Global',
+      deskripsi: 'Peserta didik menelaah sejarah peradaban global di Eropa abad ke-18 dan mengontekstualisasikannya dengan keanekaragaman kearifan sosiologis bangsa Indonesia.',
+    },
+  ],
+  kompetensiAwal: [
+    'Peserta didik telah memahami konsep dasar interaksi sosial antarpribadi dan kelompok pada jenjang SMP/MTs.',
+    'Peserta didik memiliki kepekaan mengamati fenomena kehidupan sosial di lingkungan sekolah dan sekitarnya.',
+  ],
+  saranaPrasarana: [
+    '5 Pos Lingkungan Sekolah: Pos 1 (Kantin), Pos 2 (Ruang Laboratorium), Pos 3 (Perpustakaan), Pos 4 (Ruang Kelas), dan Pos 5 (Meja Guru Wali).',
+    'Perangkat Smartphone / Tablet berkamera untuk memindai QR Code di setiap pos.',
+    'Kartu QR Code Cetak laminasi (SOSIOLOGI-POS-1 s/d SOSIOLOGI-POS-5).',
+    'Buku tulis catatan literasi sosiologi dan alat tulis masing-masing siswa.',
+    'Lembar Kerja Peserta Didik (LKPD) Outdoor Station Inquiry.',
+  ],
+  capaianPembelajaran:
+    'Pada akhir Fase E, peserta didik mampu memahami fungsi sosiologi sebagai ilmu yang mengkaji masyarakat yang memberikan landasan berpikir kritis, analitis, dan solutif terhadap gejala sosial; memahami sejarah perkembangan sosiologi; serta mengidentifikasi karakteristik dan peran sosiologi dalam kehidupan nyata.',
+  tujuanPembelajaran: [
+    {
+      nomor: 'TP 1',
+      teks: 'Peserta didik mampu menjelaskan guncangan sosial Revolusi Prancis (1789), dampak mekanisasi Revolusi Industri di Inggris, dan pengaruh Abad Pencerahan (Aufklärung) terhadap lahirnya sosiologi.',
+      posTerkait: 'Pos 1: Kantin',
+    },
+    {
+      nomor: 'TP 2',
+      teks: 'Peserta didik mampu menganalisis peran Auguste Comte sebagai Bapak Sosiologi Dunia, konsep Fisika Sosial, paham Positivisme, dan Hukum Tiga Tahap Pemikiran Manusia.',
+      posTerkait: 'Pos 2: Ruang Laboratorium',
+    },
+    {
+      nomor: 'TP 3',
+      teks: 'Peserta didik mampu membandingkan paradigma pemikiran 4 pilar tokoh klasik: Émile Durkheim (Fakta Sosial), Karl Marx (Konflik Kelas), Max Weber (Verstehen), dan Herbert Spencer (Analogi Organik).',
+      posTerkait: 'Pos 3: Perpustakaan',
+    },
+    {
+      nomor: 'TP 4',
+      teks: 'Peserta didik mampu mengidentifikasi dan membuktikan 4 ciri utama sosiologi (Empiris, Teoretis, Kumulatif, Non-Etis) dalam pengamatan interaksi nyata di lingkungan sekolah.',
+      posTerkait: 'Pos 4: Ruang Kelas',
+    },
+    {
+      nomor: 'TP 5',
+      teks: 'Peserta didik mampu menelusuri sejarah perkembangan sosiologi di Indonesia dari ajaran kearifan lokal Serat Wulangreh, kepemimpinan Ki Hajar Dewantara, hingga karya monumental Selo Soemardjan.',
+      posTerkait: 'Pos 5: Meja Guru Wali (Final)',
+    },
+  ],
+  pemahamanBermakna:
+    'Sosiologi lahir bukan dari renungan kosong, melainkan sebagai respons ilmiah atas krisis tatanan masyarakat manusia. Dengan mempelajari sejarah perkembangan sosiologi melalui penjelajahan ruang-ruang nyata di sekolah, peserta didik terlatih memiliki "Imajinasi Sosiologis" (Sociological Imagination)—mampu melihat keterkaitan antara pengalaman personal sehari-hari dengan struktur sosial yang lebih besar secara ilmiah dan non-etis (tanpa menghakimi secara moralistik).',
+  pertanyaanPemantik: [
+    'Mengapa ketika tatanan masyarakat mengalami kekacauan besar (seperti perang atau revolusi), manusia justru terdorong menciptakan cabang ilmu baru bernama sosiologi?',
+    'Dapatkah perilaku manusia dan masalah sosial di sekitar kita diselidiki secara objektif dan empiris selayaknya eksperimen di laboratorium sains?',
+    'Mengapa dalam sosiologi kita tidak boleh bertindak sebagai hakim moral yang menentukan suatu perilaku itu "berdosa" atau "terpuji", melainkan harus bersikap Non-Etis?',
+    'Bagaimana nilai kepemimpinan "Ing Ngarso Sung Tulodo" Ki Hajar Dewantara dan gagasan Selo Soemardjan membentuk sosiologi berkarakter Indonesia?',
+  ],
+  kegiatanPembelajaran: [
+    {
+      pertemuan: 1,
+      posId: 'pos_1',
+      posName: 'Kantin Sekolah',
+      topik: 'Badai Revolusi & Kelahiran Ilmu Masyarakat (Revolusi Industri & Prancis)',
+      alokasi: '2 JP (90 Menit)',
+      pendahuluan: [
+        'Guru membuka pembelajaran dengan salam, doa bersama, dan presensi.',
+        'Apersepsi: Guru mengajak peserta didik mengamati dinamika antrean, jual beli, dan pembagian kerja pedagang di kantin sekolah.',
+        'Penyampaian Tujuan Pembelajaran dan petunjuk petualangan QR Code di Pos 1.',
+      ],
+      intiInquiry: [
+        'Peserta didik menuju area Kantin Sekolah dan memindai kartu QR Code (SOSIOLOGI-POS-1).',
+        'Peserta didik membaca artikel tentang transformasi masyarakat agraris menuju masyarakat industri serta guncangan Revolusi Prancis 1789.',
+        'Peserta didik mencatat intisari penting: urbanisasi, eksploitasi kaum buruh, jam kerja 16 jam, dan peran rasionalitas Abad Pencerahan.',
+        'Peserta didik mengerjakan 5 butir soal pemahaman di Pos 1.',
+      ],
+      penutup: [
+        'Regu berkumpul kembali untuk memvalidasi intisari catatan.',
+        'Guru memberikan umpan balik dan penguatan konsep social order.',
+        'Refleksi singkat dan pengantar menuju Pos 2.',
+      ],
+    },
+    {
+      pertemuan: 2,
+      posId: 'pos_2',
+      posName: 'Ruang Laboratorium',
+      topik: 'Auguste Comte, Positivisme & Hukum Tiga Tahap Pemikiran Manusia',
+      alokasi: '2 JP (90 Menit)',
+      pendahuluan: [
+        'Guru menyapa peserta didik dan mengaitkan materi krisis sosial di Pos 1 dengan kebutuhan metode ilmiah.',
+        'Pertanyaan Pemantik: "Mengapa Comte awalnya menyebut sosiologi sebagai Fisika Sosial?"',
+      ],
+      intiInquiry: [
+        'Peserta didik menuju Ruang Laboratorium dan memindai QR Code (SOSIOLOGI-POS-2).',
+        'Mempelajari etimologi kata socius & logos serta buku Cours de Philosophie Positive (1838).',
+        'Mendiskusikan Hukum 3 Tahap: Teologis (kekuatan gaib), Metafisik (prinsip abstrak), dan Positif (fakta empiris & hukum sebab-akibat).',
+        'Membedah konsep Statika Sosial dan Dinamika Sosial serta menuntaskan 5 soal Pos 2.',
+      ],
+      penutup: [
+        'Guru memfasilitasi tanya jawab tentang penerapan cara berpikir positif di era digital.',
+        'Peserta didik merangkum bagan Hukum 3 Tahap di buku tulis catatan.',
+      ],
+    },
+    {
+      pertemuan: 3,
+      posId: 'pos_3',
+      posName: 'Perpustakaan Sekolah',
+      topik: 'Empat Pilar Tokoh Klasik Sosiologi (Durkheim, Marx, Weber, Spencer)',
+      alokasi: '2 JP (90 Menit)',
+      pendahuluan: [
+        'Guru mengajak peserta didik memasuki suasana hening literatur perpustakaan.',
+        'Menyampaikan misi menjelajahi khazanah 4 pemikir besar sosiologi dunia.',
+      ],
+      intiInquiry: [
+        'Peserta didik memindai QR Code di antara rak buku perpustakaan (SOSIOLOGI-POS-3).',
+        'Membaca komparasi pemikiran: Durkheim (Fakta Sosial & Solidaritas Organik), Marx (Konflik Kelas Borjuis-Proletar & Alienasi), Weber (Verstehen & 4 Tindakan Sosial), dan Spencer (Analogi Organik).',
+        'Mengisi lembar komparasi tokoh pada LKPD dan menjawab 5 butir soal Pos 3.',
+      ],
+      penutup: [
+        'Diskusi pleno singkat membandingkan pendekatan Durkheim vs Weber.',
+        'Pemberian apresiasi atas kerja sama tim di perpustakaan.',
+      ],
+    },
+    {
+      pertemuan: 4,
+      posId: 'pos_4',
+      posName: 'Ruang Kelas',
+      topik: 'Ciri-Ciri Utama & Hakikat Sosiologi sebagai Ilmu Pengetahuan',
+      alokasi: '2 JP (90 Menit)',
+      pendahuluan: [
+        'Guru membuka sesi di ruang kelas dan menanyakan: "Apakah obrolan santai tentang gosip di kelas bisa disebut kajian sosiologi?"',
+      ],
+      intiInquiry: [
+        'Peserta didik memindai QR Code di papan tata tertib kelas (SOSIOLOGI-POS-4).',
+        'Mengkaji 4 karakteristik ilmiah: Empiris (fakta observasi lapangan), Teoretis (abstraksi kausalitas), Kumulatif (perluasan teori lama), dan Non-Etis (objektif tanpa menghakimi baik/buruk).',
+        'Menganalisis fenomena interaksi di kelas berdasarkan prinsip das sein (kenyataan apa adanya) vs das sollen.',
+        'Menyelesaikan 5 butir soal di Pos 4.',
+      ],
+      penutup: [
+        'Refleksi penerapan sikap non-etis saat bergaul dengan teman sebaya yang berbeda latar belakang.',
+        'Pengarahan teknis menuju Babak Final di meja Guru Wali.',
+      ],
+    },
+    {
+      pertemuan: 5,
+      posId: 'pos_5',
+      posName: 'Meja Guru Wali Kelas',
+      topik: 'Sejarah Perkembangan Sosiologi di Indonesia & Peran Selo Soemardjan',
+      alokasi: '2 JP (90 Menit)',
+      pendahuluan: [
+        'Peserta didik mempersiapkan seluruh catatan investigasi dari Pos 1 hingga Pos 4.',
+        'Penyampaian misi babak pamungkas di meja Guru Wali.',
+      ],
+      intiInquiry: [
+        'Peserta didik menghadap meja Guru Wali Kelas dan memindai QR Code Final (SOSIOLOGI-POS-5).',
+        'Mempelajari sejarah sosiologi Nusantara: Serat Wulangreh, ajaran kepemimpinan Taman Siswa Ki Hajar Dewantara, kuliah perdana bahasa Indonesia oleh Prof. Soenario Kolopaking di UGM (1948), dan Prof. Dr. Selo Soemardjan (Social Changes in Jogjakarta).',
+        'Menuntaskan 5 soal sumatif terakhir dan membuka peti penghargaan harta karun ilmu.',
+        'Mengumpulkan buku catatan literasi untuk diverifikasi oleh Guru Wali.',
+      ],
+      penutup: [
+        'Evaluasi menyeluruh (Penilaian Sumatif 25 PG & Esai HOTS).',
+        'Pemberian sertifikat/piagam Detektif Sosiologi Berprestasi.',
+        'Doa penutup dan tindak lanjut pengayaan.',
+      ],
+    },
+  ],
+  diferensiasi: {
+    konten:
+      'Tersedia artikel naratif bergambar dengan kata kunci bertinta warna, glosarium istilah untuk siswa dengan hambatan kosakata, dan teks komparatif mendalam bagi siswa berpencapaian tinggi.',
+    proses:
+      'Urutan pos 1–4 diacak otomatis pada aplikasi siswa untuk mendukung kerja mandiri kelompok kecil; tutor sebaya dalam kelompok membantu siswa yang membutuhkan asistensi.',
+    produk:
+      'Peserta didik dapat menyajikan intisari literasi berupa catatan manual di buku tulis, infografis peta konsep digital, atau presentasi lisan singkat di hadapan kelas.',
+  },
+  asesmenRencana: {
+    diagnostik:
+      'Tanya jawab awal seputar pengalaman berinteraksi sosial dan observasi lingkungan sekolah saat jam istirahat.',
+    formatif:
+      'Catatan mandiri di buku tulis literasi setiap pos, keaktifan berdiskusi regu, dan ketepatan menjawab 5 soal latihan di setiap pos.',
+    sumatif:
+      'Penilaian Sumatif Akhir: Tes Pilihan Ganda (25 Soal A-E) dan Tes Uraian Analitis (4 Soal Kasus HOTS) dengan Rubrik Analitis Berstandar SMA.',
+  },
+  refleksi: {
+    guru: [
+      'Apakah metode outdoor station-based inquiry efektif meningkatkan antusiasme siswa belajar teori sosiologi?',
+      'Bagian materi atau pos mana yang paling menantang bagi siswa untuk dipahami?',
+      'Langkah apa yang perlu diperbaiki untuk pertemuan selanjutnya?',
+    ],
+    pesertaDidik: [
+      'Pengetahuan baru apa yang paling membuka cara pandang saya tentang masyarakat hari ini?',
+      'Bagaimana saya dapat menerapkan sikap ilmiah Non-Etis saat berinteraksi di lingkungan sosial?',
+      'Apakah kerja sama kelompok saya berjalan solid dan menyenangkan?',
+    ],
+  },
+  daftarPustaka: [
+    'Soekanto, Soerjono. (2012). Sosiologi Suatu Pengantar. Jakarta: Rajawali Pers.',
+    'Soemardjan, Selo & Soemardi, Soelaeman. (1964). Setangkai Bunga Sosiologi. Jakarta: Yayasan Badan Penerbit Fakultas Ekonomi UI.',
+    'Ritzer, George. (2012). Teori Sosiologi Klasik sampai Perkembangan Terakhir Postmodern. Yogyakarta: Pustaka Pelajar.',
+    'Giddens, Anthony. (2009). Sociology (6th Edition). Cambridge: Polity Press.',
+    'Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi. (2022). Buku Panduan Guru dan Siswa Sosiologi untuk SMA Kelas X. Jakarta: Pusat Perbukuan.',
+  ],
+};

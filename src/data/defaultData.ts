@@ -1,19 +1,19 @@
 import { LocationConfig, GameSettings, Question } from '../types/game';
 
 export const DEFAULT_LOCATIONS: LocationConfig[] = [
-  // --- POS 1: GUDANG SEKOLAH (FAKTOR LINGKUNGAN & POLUSI UDARA) ---
+  // --- POS 1: KANTIN (FAKTOR LINGKUNGAN & POLUSI UDARA) ---
   {
     id: 'pos_1',
     code: 'POS 1',
-    name: 'Gudang Sekolah',
+    name: 'Kantin',
     qrCode: 'LITERASI-POS-1',
-    hint: '📦 Aku adalah ruangan tempat menyimpan perkakas dan barang perlengkapan sekolah. Temukan kartu QR Code di dekat pintuku untuk menyelidiki bagaimana polusi dan udara kotor mencemari pernapasan kita!',
+    hint: '🍜 Aku adalah area KANTIN SEKOLAH tempat siswa berkumpul saat istirahat. Temukan kartu QR Code di dekat Kantin untuk menyelidiki bagaimana polusi dan udara kotor mencemari pernapasan kita!',
     isFinal: false,
     isActive: true,
-    iconName: 'Wind',
+    iconName: 'UtensilsCrossed',
     story: {
       chapterNumber: 1,
-      title: 'Pos 1: Bahaya Udara Kotor & Polusi Lingkungan',
+      title: 'Pos 1: Bahaya Udara Kotor & Polusi Lingkungan (Kantin)',
       subtitle: 'Memahami dampak asap kendaraan, pabrik, debu, dan gas karbon monoksida pada saluran pernapasan',
       imageCaption: 'Ilustrasi Dampak Polusi Udara terhadap Organ Pernapasan: Partikel debu halus (PM 2.5), asap knalpot kendaraan, dan asap cerobong industri masuk mengiritasi trakea serta mengotori paru-paru.',
       visualHighlights: [
@@ -30,7 +30,7 @@ export const DEFAULT_LOCATIONS: LocationConfig[] = [
         'Ancaman lingkungan lainnya yang sering melanda adalah KABUT ASAP (smog), terutama akibat bencana kebakaran hutan atau polusi kota industri yang pekat. Kabut asap mengandung partikel sangat kecil (PM 2.5) dan gas sulfur dioksida yang dapat menembus hingga ke bagian terdalam paru-paru. Kabut asap membuat mata terasa perih berair, tenggorokan sakit seperti terbakar, dan memicu serangan sesak napas hebat bagi siapa pun yang menghirupnya.',
         'Tidak hanya di jalan raya, faktor lingkungan di dalam ruangan tempat tinggal juga dapat memicu gangguan pernapasan. Ruangan yang sirkulasi ventilasi udaranya buruk, pengap, lembap, jarang terkena sinar matahari, atau karpet yang dipenuhi tumpukan debu dan spora jamur akan membuat udara dalam ruangan menjadi tidak sehat. Oleh karena itu, menjaga kebersihan lingkungan dan sirkulasi udara adalah kunci utama mencegah gangguan pernapasan.',
       ],
-      summaryClue: 'Pos 1: Faktor lingkungan penyebab gangguan pernapasan meliputi polusi asap kendaraan, pabrik, kebakaran hutan (kabut asap), debu pemicu ISPA, gas Karbon Monoksida (CO) yang mengikat darah, serta ventilasi ruangan yang pengap.',
+      summaryClue: 'Pos 1 (Kantin): Faktor lingkungan penyebab gangguan pernapasan meliputi polusi asap kendaraan, pabrik, kebakaran hutan (kabut asap), debu pemicu ISPA, gas Karbon Monoksida (CO) yang mengikat darah, serta ventilasi ruangan yang pengap.',
       glossary: [
         { word: 'Polusi Udara', meaning: 'Kondisi udara yang tercemar zat kimia beracun, partikel debu, dan asap berbahaya bagi makhluk hidup' },
         { word: 'Karbon Monoksida (CO)', meaning: 'Gas beracun tak berwarna dan tak berbau dari asap knalpot yang mengikat sel darah merah lebih kuat daripada oksigen' },
@@ -41,19 +41,19 @@ export const DEFAULT_LOCATIONS: LocationConfig[] = [
     },
   },
 
-  // --- POS 2: DI BAWAH POHON JAMBU (FAKTOR PENYAKIT INFEKSI MIKROORGANISME) ---
+  // --- POS 2: RUANG LABORATORIUM (FAKTOR PENYAKIT INFEKSI MIKROORGANISME) ---
   {
     id: 'pos_2',
     code: 'POS 2',
-    name: 'Di Bawah Pohon Jambu',
+    name: 'Ruang Laboratorium',
     qrCode: 'LITERASI-POS-2',
-    hint: '🍐 Aku adalah pohon buah yang rimbun di halaman sekolah. Datanglah ke bawah keteduhanku dan pindai QR Code untuk membongkar rahasia kuman penyakit (virus dan bakteri) penyebab flu, TBC, dan pneumonia!',
+    hint: '🔬 Kunjungi RUANG LABORATORIUM SEKOLAH! Di tempat uji coba dan mikroskop ini, pindai QR Code untuk membongkar rahasia kuman penyakit (virus dan bakteri) penyebab flu, TBC, dan pneumonia!',
     isFinal: false,
     isActive: true,
-    iconName: 'Trees',
+    iconName: 'FlaskConical',
     story: {
       chapterNumber: 2,
-      title: 'Pos 2: Serangan Kuman Penyakit (Virus & Bakteri)',
+      title: 'Pos 2: Serangan Kuman Penyakit (Ruang Laboratorium)',
       subtitle: 'Mengenal infeksi mikroorganisme patogen penyebab influenza, TBC, pneumonia, dan bronkitis',
       imageCaption: 'Ilustrasi Kuman Patogen Penyerang Sistem Pernapasan: Virus influenza menyerang saluran napas atas, bakteri Mycobacterium tuberculosis merusak dinding alveolus, serta bakteri Streptococcus menyebabkan pneumonia.',
       visualHighlights: [
@@ -70,7 +70,7 @@ export const DEFAULT_LOCATIONS: LocationConfig[] = [
         'Kuman patogen juga dapat menginfeksi percabangan saluran napas, menyebabkan penyakit BRONKITIS. Bronkitis adalah peradangan pada dinding bagian dalam saluran bronkus (dua cabang batang tenggorokan yang menuju paru-paru kanan dan kiri). Peradangan ini merangsang saluran menghasilkan lendir kental (mukus) dalam jumlah berlebih. Lendir tersebut menyumbat aliran udara, menimbulkan batuk berdahak tebal terus-menerus, dada terasa sesak, dan penderita mudah kehabisan napas.',
         'Semua penyakit pernapasan yang disebabkan oleh faktor infeksi kuman ini sangat mudah menyebar di tempat keramaian. Penularan terjadi secara langsung lewat percikan cairan bersin dan batuk di udara, atau tidak langsung saat kita menyentuh gagang pintu yang terkontaminasi lalu mengusap hidung dan mulut. Oleh karena itu, menjaga kebersihan diri, mencuci tangan memakai sabun, dan memakai masker adalah benteng perlindungan terbaik.',
       ],
-      summaryClue: 'Pos 2: Faktor penyakit disebabkan kuman mikroorganisme: Virus Influenza (flu lewat droplet), Bakteri Mycobacterium tuberculosis (TBC paru berbintil), Bakteri/Virus Pneumonia (alveolus terisi cairan/nanah), dan radang Bronkitis.',
+      summaryClue: 'Pos 2 (Ruang Laboratorium): Faktor penyakit disebabkan kuman mikroorganisme: Virus Influenza (flu lewat droplet), Bakteri Mycobacterium tuberculosis (TBC paru berbintil), Bakteri/Virus Pneumonia (alveolus terisi cairan/nanah), dan radang Bronkitis.',
       glossary: [
         { word: 'Influenza (Flu)', meaning: 'Penyakit menular pada saluran napas atas yang disebabkan oleh serangan virus influenza' },
         { word: 'Tuberkulosis (TBC)', meaning: 'Penyakit paru-paru menular akibat infeksi bakteri Mycobacterium tuberculosis yang menimbulkan bintil pada dinding alveolus' },
@@ -81,19 +81,19 @@ export const DEFAULT_LOCATIONS: LocationConfig[] = [
     },
   },
 
-  // --- POS 3: DI BAWAH POHON CEMPAKA (FAKTOR GAYA HIDUP & RACUN ASAP ROKOK) ---
+  // --- POS 3: PERPUSTAKAAN (FAKTOR GAYA HIDUP & RACUN ASAP ROKOK) ---
   {
     id: 'pos_3',
     code: 'POS 3',
-    name: 'Di Bawah Pohon Cempaka',
+    name: 'Perpustakaan',
     qrCode: 'LITERASI-POS-3',
-    hint: '🌼 Bungaku terkenal harum semerbak. Datanglah ke bawah keteduhanku untuk menyelidiki bahaya racun asap rokok dan zat kimia berbahaya yang mengancam paru-paru manusia!',
+    hint: '📚 Datanglah ke area PERPUSTAKAAN SEKOLAH! Di dekat rak literasi kesehatan, temukan kartu QR Code untuk menyelidiki bahaya racun asap rokok dan zat kimia berbahaya yang mengancam paru-paru manusia!',
     isFinal: false,
     isActive: true,
-    iconName: 'Sparkles',
+    iconName: 'BookOpen',
     story: {
       chapterNumber: 3,
-      title: 'Pos 3: Racun Asap Rokok & Kebiasaan Buruk',
+      title: 'Pos 3: Racun Asap Rokok & Kebiasaan Buruk (Perpustakaan)',
       subtitle: 'Bahaya rokok bagi perokok aktif dan pasif, kerusakan silia, nikotin, tar, serta kanker paru-paru',
       imageCaption: 'Ilustrasi Bahaya Merokok bagi Paru-Paru: Zat lengket Tar mengendap merusak kantung alveolus, melumpuhkan rambut getar (silia) pelindung trakea, dan ancaman bahaya bagi perokok pasif.',
       visualHighlights: [
@@ -110,7 +110,7 @@ export const DEFAULT_LOCATIONS: LocationConfig[] = [
         'Paparan asap rokok selama bertahun-tahun akan menimbulkan penyakit kronis berbahaya, salah satunya PPOK (Penyakit Paru Obstruktif Kronis). PPOK menyebabkan penderita mengalami sesak napas menahun yang tidak bisa sembuh total karena saluran napas menyempit permanen dan kantung udara paru-paru rusak. Puncaknya, zat tar dapat memicu KANKER PARU-PARU, yaitu pertumbuhan sel-sel abnormal yang merusak jaringan paru-paru hingga mengancam nyawa.',
         'Selain merokok, kebiasaan hidup tidak sehat lainnya yang memicu gangguan pernapasan adalah jarang berolahraga (menyebabkan kapasitas vital paru-paru mengecil), kebiasaan begadang dan kurang tidur (menurunkan daya tahan tubuh terhadap serangan kuman pernapasan), serta malas membersihkan kasur, bantal, dan karpet dari tungau debu rumah.',
       ],
-      summaryClue: 'Pos 3: Faktor kebiasaan merokok merusak paru-paru melalui Nikotin (kecanduan), Tar (pemicu kanker mengendap di alveolus), dan gas CO. Asap rokok melumpuhkan silia dan sangat berbahaya bagi perokok pasif (termasuk anak-anak).',
+      summaryClue: 'Pos 3 (Perpustakaan): Faktor kebiasaan merokok merusak paru-paru melalui Nikotin (kecanduan), Tar (pemicu kanker mengendap di alveolus), dan gas CO. Asap rokok melumpuhkan silia dan sangat berbahaya bagi perokok pasif (termasuk anak-anak).',
       glossary: [
         { word: 'Nikotin', meaning: 'Zat adiktif beracun dalam rokok yang membuat pemakainya ketagihan dan mempersempit pembuluh darah' },
         { word: 'Tar', meaning: 'Zat kimia kental berwarna cokelat pekat dalam rokok yang mengendap di paru-paru dan menjadi pemicu kanker paru-paru' },
@@ -121,19 +121,19 @@ export const DEFAULT_LOCATIONS: LocationConfig[] = [
     },
   },
 
-  // --- POS 4: DI LORONG PARKIR (FAKTOR ALERGI & KELAINAN FISIK) ---
+  // --- POS 4: RUANG KELAS (FAKTOR ALERGI & KELAINAN FISIK) ---
   {
     id: 'pos_4',
     code: 'POS 4',
-    name: 'Di Lorong Parkir',
+    name: 'Ruang Kelas',
     qrCode: 'LITERASI-POS-4',
-    hint: '🚲 Aku adalah area tempat berbarisnya sepeda dan kendaraan warga sekolah. Temukan kartu QR Code di lorong ini untuk memecahkan misteri alergi, asma, dan kelainan fisik organ pernapasan!',
+    hint: '🏫 Datanglah ke RUANG KELAS! Temukan kartu QR Code di sudut kelas untuk memecahkan misteri alergi, asma, dan kelainan fisik organ pernapasan!',
     isFinal: false,
     isActive: true,
-    iconName: 'ShieldAlert',
+    iconName: 'School',
     story: {
       chapterNumber: 4,
-      title: 'Pos 4: Reaksi Alergi, Kelainan Fisik & Kerusakan Kantung Udara',
+      title: 'Pos 4: Reaksi Alergi, Kelainan Fisik & Kerusakan Kantung Udara (Ruang Kelas)',
       subtitle: 'Memahami pemicu asma, emfisema pada alveolus, dan kelainan fisik organ pernapasan',
       imageCaption: 'Ilustrasi Gangguan Asma dan Emfisema: Perbedaan saluran bronkus normal dengan bronkus asma yang menyempit akibat alergen (udara dingin/debu), serta kantung alveolus yang rusak elastisitasnya pada emfisema.',
       visualHighlights: [
@@ -150,7 +150,7 @@ export const DEFAULT_LOCATIONS: LocationConfig[] = [
         'Faktor fisik lainnya dapat berupa KELAINAN BAWAAN sejak lahir. Contohnya adalah bayi yang lahir secara prematur (lahir lebih awal sebelum usia kandungan matang). Pada bayi prematur, organ paru-paru dan zat pelapis kantung alveolus (surfaktan) belum berkembang sempurna, sehingga bayi mengalami gangguan pernapasan bawaan sejak detik pertama kelahirannya dan membutuhkan bantuan alat inkubator serta tabung oksigen khusus.',
         'Selain itu, kelainan fisik juga dapat berupa penyumbatan mekanis pada jalan napas. Misalnya terjadi pembengkakan pada kelenjar AMANDEL (tonsilitis kronis) di tenggorokan atau tumbuhnya POLIP HIDUNG (jaringan lunak jinak di dalam rongga hidung). Pembesaran amandel atau polip ini menyempitkan lubang aliran udara, sehingga seseorang sering kesulitan bernapas lega melalui hidung dan terpaksa bernapas lewat mulut atau mendengkur sangat keras saat tidur.',
       ],
-      summaryClue: 'Pos 4: Faktor fisik dan alergi mencakup Asma (penyempitan saluran bronkus dipicu dingin/debu dan berbunyi mengi, tidak menular), Emfisema (kerusakan elastisitas alveolus), bayi lahir prematur, serta pembesaran amandel dan polip.',
+      summaryClue: 'Pos 4 (Ruang Kelas): Faktor fisik dan alergi mencakup Asma (penyempitan saluran bronkus dipicu dingin/debu dan berbunyi mengi, tidak menular), Emfisema (kerusakan elastisitas alveolus), bayi lahir prematur, serta pembesaran amandel dan polip.',
       glossary: [
         { word: 'Asma', meaning: 'Penyakit penyempitan saluran pernapasan yang dipicu oleh reaksi alergi terhadap udara dingin, debu, atau bulu hewan' },
         { word: 'Alergen', meaning: 'Zat atau benda pemicu timbulnya reaksi alergi pada tubuh (contoh: debu, serbuk sari, bulu kucing, hawa dingin)' },
@@ -161,19 +161,19 @@ export const DEFAULT_LOCATIONS: LocationConfig[] = [
     },
   },
 
-  // --- POS 5: DI KELAS (DAMPAK & UPAYA PENCEGAHAN GANGGUAN PERNAPASAN) ---
+  // --- POS 5: GURU WALI (DAMPAK & UPAYA PENCEGAHAN GANGGUAN PERNAPASAN / BABAK FINAL) ---
   {
     id: 'pos_5',
     code: 'POS 5 (FINAL)',
-    name: 'Di Kelas',
+    name: 'Guru Wali',
     qrCode: 'LITERASI-POS-5',
-    hint: '🏫 Langkah penyelidikan terakhirmu telah tiba! Kembalilah ke ruang kelas tempat Bapak/Ibu Guru menantimu. Pindai QR Code terakhir untuk merangkum seluruh penyebab gangguan pernapasan dan cara pencegahannya!',
+    hint: '👨‍🏫 Langkah penyelidikan terakhirmu telah tiba! Datanglah ke meja GURU WALI KELAS tempat Bapak/Ibu Guru menantimu. Pindai QR Code terakhir untuk merangkum seluruh penyebab gangguan pernapasan dan cara pencegahannya!',
     isFinal: true,
     isActive: true,
-    iconName: 'Crown',
+    iconName: 'Award',
     story: {
       chapterNumber: 5,
-      title: 'Pos 5: Dampak Gangguan Pernapasan & Upaya Menjaga Kesehatan Organ',
+      title: 'Pos 5: Dampak Gangguan Pernapasan & Upaya Menjaga Kesehatan (Guru Wali)',
       subtitle: 'Mengevaluasi bahaya kurang oksigen serta langkah nyata melindungi paru-paru kita',
       imageCaption: 'Ilustrasi Upaya Menjaga Kesehatan Pernapasan: Mengenakan masker saat berkendara, berolahraga pagi di taman hijau beroksigen segar, ventilasi kelas yang sehat, serta etika batuk yang benar.',
       visualHighlights: [
@@ -190,7 +190,7 @@ export const DEFAULT_LOCATIONS: LocationConfig[] = [
         'Untuk mengatasi FAKTOR KEBIASAAN HIDUP, kita harus bertekad kuat untuk menjauhi asap rokok dan tidak pernah mencoba merokok seumur hidup. Hindari pula tempat-tempat berkumpulnya orang yang sedang merokok agar kita tidak menjadi perokok pasif. Selain itu, biasakan berolahraga secara teratur seperti senam, lari pagi, atau berenang untuk melatih kelenturan otot diafragma dan meningkatkan kapasitas paru-paru.',
         'Langkah terakhir yang sangat mulia adalah menjaga kelestarian lingkungan dengan menanam pepohonan dan tanaman hijau di pekarangan rumah dan halaman sekolah. Melalui proses fotosintesis, tumbuhan hijau menyerap gas karbondioksida dari udara dan melepaskan gas OKSIGEN murni yang segar setiap saat. Dengan lingkungan yang hijau dan paru-paru yang sehat, kita dapat bernapas lega dan belajar dengan penuh semangat!',
       ],
-      summaryClue: 'Pos 5: Dampak gangguan pernapasan menurunkan pasokan oksigen tubuh. Pencegahan meliputi memakai masker saat polusi, membuka ventilasi ruangan, etika batuk/bersin, imunisasi BCG, menjauhi rokok, olahraga rutin, dan menanam pohon hijau.',
+      summaryClue: 'Pos 5 (Guru Wali): Dampak gangguan pernapasan menurunkan pasokan oksigen tubuh. Pencegahan meliputi memakai masker saat polusi, membuka ventilasi ruangan, etika batuk/bersin, imunisasi BCG, menjauhi rokok, olahraga rutin, dan menanam pohon hijau.',
       glossary: [
         { word: 'Kapasitas Paru-Paru', meaning: 'Volume udara maksimal yang dapat ditampung dan dihembuskan oleh paru-paru manusia' },
         { word: 'Etika Batuk', meaning: 'Tata cara menutup mulut dan hidung dengan tisu atau siku bagian dalam saat batuk agar tidak menyebarkan kuman ke orang lain' },
